@@ -1,7 +1,7 @@
-# Rasterização Scanline com Aritmética Incremental
+# Rasterização Scanline com Aritmética Incremental e/ou Coordenadas Baricêntricas
 
 ## Sistema Geral
-O software oferece ao usuário a capacidade de desenhar um ou mais triângulos na tela, proporcionando a opção de escolher a cor das arestas. Além disso, há a funcionalidade de preencher os triângulos de forma cromática, permitindo que o usuário determine as cores dos vértices. A funcionalidade de preenchimento cromático utiliza o algoritmo de rasterização para efetuar o processo de coloração do polígono criando uma transição suave de cores. A imagem abaixo ilustra parcialmente essas características.
+O software oferece ao usuário a capacidade de desenhar um ou mais triângulos na tela, proporcionando a opção de escolher a cor das arestas. Além disso, há a funcionalidade de preencher os triângulos de forma cromática, permitindo que o usuário determine as cores dos vértices. A funcionalidade de preenchimento cromático utiliza o algoritmo de rasterização com aritmética incremetnal ou coordenadas baricêntricas para efetuar o processo de coloração do polígono criando uma transição suave de cores, de acordo com a escolha do usuário. A imagem abaixo ilustra parcialmente essas características.
 
 ![representacao_app](./representacao_app.PNG)
 
@@ -14,7 +14,11 @@ Outros requisitos também foram adicionados para auxiliar o usuário, tais como:
 ## Como Usar
 Para executar o código use:
 ``` 
-python3 main.py
+python3 barricentrico.py 
+
+ou
+
+python3 rasterizado.py
 ```
 Se precisar instalar a biblioteca tkinter use:
 ```
